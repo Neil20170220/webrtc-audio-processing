@@ -21,4 +21,7 @@ Pod::Spec.new do |s|
       http: "https://github.com/Neil20170220/webrtc-audio-processing/releases/download/#{s.version}/webrtc_audio_processing.xcframework.zip"
   }
   s.vendored_frameworks = 'webrtc_audio_processing.xcframework'
+  s.pod_target_xcconfig = {
+    'HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_XCFRAMEWORKS_BUILD_DIR}/webrtc_audio_processing/webrtc_audio_processing.framework/**'
+  }
 end
