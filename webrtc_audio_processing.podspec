@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   }
   s.vendored_frameworks = 'webrtc_audio_processing.xcframework'
   s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_XCFRAMEWORKS_BUILD_DIR}/webrtc_audio_processing/webrtc_audio_processing.framework/**'
+    'HEADER_SEARCH_PATHS' => '$(inherited) ${PODS_XCFRAMEWORKS_BUILD_DIR}/webrtc_audio_processing/webrtc_audio_processing.framework/Headers ${PODS_XCFRAMEWORKS_BUILD_DIR}/webrtc_audio_processing/webrtc_audio_processing.framework/Headers/webrtc-audio-processing-1'
   }
 end
